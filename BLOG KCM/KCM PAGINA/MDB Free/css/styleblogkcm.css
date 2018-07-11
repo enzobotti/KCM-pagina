@@ -1,0 +1,234 @@
+/* Your custom styles */
+
+
+/* Required for full background image */
+
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
+
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .view {
+        height: 100vh;
+    }
+}
+
+.top-nav-collapse {
+    background-color: #26ccca !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #26ccca !important;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #26ccca !important;
+    }
+}
+
+h1 {
+    letter-spacing: 8px;
+}
+
+h5 {
+    letter-spacing: 3px;
+}
+
+.hr-light {
+    border-top: 3px solid #fff;
+    width: 80px;
+}
+
+.jose {
+    background: #444;
+}
+
+.river {
+    color: #3b5998;
+}
+
+.boca {
+    color: #007bb5;
+}
+
+.independiente {
+    color: #dd4b39;
+}
+
+.rosario {
+    color: #00bf8f;
+}
+
+.seguir {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.redes {
+    display: flex;
+}
+
+.packer {
+    margin: auto;
+}
+
+.foto1 {
+    padding-bottom: 35px;
+}
+
+.foto2 {
+    padding-bottom: 15px;
+}
+
+.foto3 {
+    padding-top: 15px;
+}
+
+.titulo2 {
+    color: #26ccca;
+    font-family: 'Oswald', sans-serif;
+}
+
+.portada1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    height: 10px;
+    padding-bottom: 160PX;
+}
+
+.portada2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    color: #26ccca;
+    height: 30px;
+}
+
+.portada3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.uña {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+}
+
+.dedo {
+    background: #ffef3c;
+}
+
+.cuticula {
+    background: #444;
+}
+
+.pie {
+    padding-top: 80px;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 60px;
+}
+
+.sociales {
+    font-family: 'Oswald', sans-serif;
+    color: #ffef3c;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.sapo {
+    font-family: 'Oswald', sans-serif;
+    color: deeppink;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.community {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.pablo {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.sem {
+    color: #ffef3c;
+}
+
+.lilita {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.menem {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.tituloblog {
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+}
+
+.introblog {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.tituloblog2 {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.parrafoblog {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.formulario {
+    width: 100%;
+    height: 150px;
+    border: solid #4d94ff;
+    padding-top: 10px;
+}
+
+.spam {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.rod {
+    color: deeppink;
+}
+
+.mila {
+    color: deeppink;
+}
