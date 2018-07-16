@@ -28,19 +28,7 @@ $(document).ready(function () {
             1000
         );
     }
-
-    var contactoButtonNode = $('#contactoButton2')
-
-    contactoButtonNode.click(scrollingContacto)
-
-    function scrollingContacto(event) {
-        $('html, body').animate(
-            {
-                scrollTop: $('#contactoSection').offset().top - 80
-            },
-            1000
-        );
-    }
+    
 
 
 
@@ -48,17 +36,16 @@ $(document).ready(function () {
 
     //Scroll Function DISEÑO GRAFICO
     var diseñoButtonNode = $('#diseñoButton')
-
+    
+    
     diseñoButtonNode.click(scrollingDiseño)
 
-    function scrollingDiseño(event) {
-        $('html, body').animate(
-            {
-                scrollTop: $('#diseñoSection').offset().top - 130
-            },
-            1000
-        );
+    function scrollingDiseño(secton){
+        $('html, body').animate({
+            scrollTop: $('#diseñoSection').offset().top-130
+        }, 1000);        
     }
+
 
     //Scroll Function DESARROLLO WEB
     var desarrolloButtonNode = $('#desarrolloButton')

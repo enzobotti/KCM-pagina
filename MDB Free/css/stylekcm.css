@@ -242,6 +242,10 @@ h5 {
     color: #ffef3c;
 }
 
+.imgShadowStrong {
+    box-shadow: 10px 10px 30px rgb(0, 0, 0);
+}
+
 
 /* STYLE HTML SERVICIOS */
 
