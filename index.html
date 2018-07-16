@@ -9,11 +9,11 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="./MDB Free/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="./MDB Free/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="css/stylekcm.css" rel="stylesheet">
+    <link href="./MDB Free/css/stylekcm.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis|Oswald|Roboto" rel="stylesheet">
 </head>
 
@@ -26,17 +26,22 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
             <div class="container">
 
-                <a class="navbar-brand" href="#"><img src="img/KCM8.png" alt="#" height="90px" width="140px"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="./imgIndex/KCM8.png" alt="#" height="90px" width="140px">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active uña">
-                            <a class="nav-link " href="#">CONÓCENOS<span class="sr-only">(current)</span></a>
+                            <a id="conocenosButton" class="nav-link " href="#">CONÓCENOS
+                                <span class="sr-only">(current)</span>
+                            </a>
                         </li>
                         <li class="nav-item uña">
-                            <a class="nav-link " href="#">SERVICIOS</a>
+                            <a class="nav-link " href="./serviciosDOS.html">SERVICIOS</a>
                         </li>
                         <li class="nav-item uña">
                             <a class="nav-link " href="#">REDES</a>
@@ -45,7 +50,7 @@
                             <a class="nav-link " href="#">BLOG</a>
                         </li>
                         <li class="nav-item uña">
-                            <a class="nav-link " href="#">CONTACTO</a>
+                            <a id="contactoButton" class="nav-link " href="#">CONTACTO</a>
                         </li>
                     </ul>
                     <form class="form-inline">
@@ -76,10 +81,10 @@
         <!-- Navbar -->
         <!-- Full Page Intro -->
 
-        <div class="view" data-jarallax='{"speed": 0.2}' style="background-image: url('img/compu1-min.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-            <video class="video-intro" playsinline autoplay muted loop>
-                <source src="img/compu1-min.jpg" type="video/mp4">
-                </video>
+        <div class="view" data-jarallax='{"speed": 0.2}' style="background-image: url('./imgIndex/compu1-min.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <video class="video-intro">
+                <source src="imgIndex/compu1-min.jpg" type="video/mp4">
+            </video>
             <!-- Mask & flexbox options-->
             <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                 <!-- Content -->
@@ -88,11 +93,16 @@
                     <div class="row">
                         <!--Grid column-->
                         <div class="col-md-12 mb-4 white-text text-center">
-                            <h1 class="h1-reponsive text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown portada1" data-wow-delay="0.3s"><strong>Community Management & Web Development</strong></h1>
-                            <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
-                            <h5 class="text-uppercase mb-4  wow fadeInDown portada2" data-wow-delay="0.4s"><strong>WE ARE</strong></h5>
-                            <h5 class="text-uppercase mb-4  wow fadeInDown portada3" data-wow-delay="0.4s"><strong>COMMUNICATING</strong></h5>
-                            <a class="btn btn-outline-white wow fadeInDown " data-wow-delay="0.4s">NUESTROS SERVICIOS</a>
+                            <h1 class="h1-reponsive text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown portada1" data-wow-delay="0.3s">
+                                <strong>Community Management & Web Development</strong>
+                            </h1>
+                            <hr id="hrBar" class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+                            <h5 class="text-uppercase mb-4  wow fadeInDown portada2" data-wow-delay="0.4s" strong>WE ARE</strong>
+                            </h5>
+                            <h5 class="text-uppercase mb-4  wow fadeInDown portada3" data-wow-delay="0.4s">
+                                <strong>COMMUNICATING</strong>
+                            </h5>
+                            <a class="btn btn-outline-white wow fadeInDown" href="./serviciosDOS.html" data-wow-delay="0.4s">NUESTROS SERVICIOS</a>
                         </div>
                         <!--Grid column-->
                     </div>
@@ -106,21 +116,26 @@
     </header>
     <div class="diferencia">
         <div class="contenedor container">
-            <div class="hijo1"><span>MEJORAMOS TU PRECENCIA DIGITAL.</span></div>
+            <div class="hijo1">
+                <span>MEJORAMOS TU PRECENCIA DIGITAL.</span>
+            </div>
         </div>
     </div>
-    <div class="dedo">
+    <div  id="conocenosSection" class="dedo">
         <section class=" container">
 
             <!-- Section heading -->
             <h2 class="h1-responsive font-weight-bold text-left pie">NOSOTROS.</h2>
             <!-- Section description -->
-            <p class="black-text text-left w-responsive mb-8 pablo">Somos una agencia de marketing online especializada en el desarrollo de estrategias digitales integrales. Nos encontramos en Buenos Aires, concretamente ubicados en Capital Federal. Cada proyecto al que nos vinculamos lo adoptamos como propio,
-                con gran pasión por lo que hacemos y enfocados en lograr los objetivos del cliente,trabajamos con rigor, detalle y especialización.</p>
+            <p class="black-text text-left w-responsive mb-8 pablo">Somos una agencia de marketing online especializada en el desarrollo de estrategias digitales integrales. Nos
+                encontramos en Buenos Aires, concretamente ubicados en Capital Federal. Cada proyecto al que nos vinculamos
+                lo adoptamos como propio, con gran pasión por lo que hacemos y enfocados en lograr los objetivos del cliente,trabajamos
+                con rigor, detalle y especialización.</p>
             <p class="pablo">Para ello haciendo uso de las tendencias del momento desarrollamos y programamos diseños web de última generación.</p>
             <p class="creatividad pablo">Creatividad. Nuestro estandarte.</p>
-            <p class="pablo">Todos nuestros trabajos de diseño web son hechos a medida y sin uso de plantillas, ya que consideramos que como profesionales y creativos no debería ser de otra forma. Es por ello que en cada obra conseguimos un resultado totalmente único
-                y a medida, adaptado a las necesidades del cliente.
+            <p class="pablo">Todos nuestros trabajos de diseño web son hechos a medida y sin uso de plantillas, ya que consideramos que como
+                profesionales y creativos no debería ser de otra forma. Es por ello que en cada obra conseguimos un resultado
+                totalmente único y a medida, adaptado a las necesidades del cliente.
             </p>
 
 
@@ -143,8 +158,10 @@
                 <h2 class="h1-responsive font-weight-bold text-center my-5 titulo2">¿QUÉ HACEMOS?</h2>
                 <!-- Section description -->
                 <p class="lead grey-text text-center w-responsive mx-auto mb-5 menem">Más que un proveedor de servicios, somos tus aliados estratégicos.</p>
-                <p class="lead grey-text text-center w-responsive mx-auto mb-5 menem">En KCM nos gustan los desafíos profesionales. Cada proyecto tiene un componente estimulante que nos motiva. Enfocamos los obstáculos como retos. Somos perfeccionistas y, a la vez, prácticos. Encontrar la mejor opción para tu proyecto implica
-                    complicidad y consenso. Seleccioná el área en el que estás interesado y encontrá el servicio de marketing online que buscas.</p>
+                <p class="lead grey-text text-center w-responsive mx-auto mb-5 menem">En KCM nos gustan los desafíos profesionales. Cada proyecto tiene un componente estimulante que nos motiva.
+                    Enfocamos los obstáculos como retos. Somos perfeccionistas y, a la vez, prácticos. Encontrar la mejor
+                    opción para tu proyecto implica complicidad y consenso. Seleccioná el área en el que estás interesado
+                    y encontrá el servicio de marketing online que buscas.</p>
 
                 <!-- Grid row -->
                 <div class="row">
@@ -164,7 +181,8 @@
                             <!-- Grid column -->
                             <div class="col-10">
                                 <h5 class="font-weight-bold mb-3">Diseño Gráfico</h5>
-                                <p class="grey-text">Diseñamos las características visuales de tu proyecto para generar una vista positiva de tu empresa al instante.</p>
+                                <p class="grey-text">Diseñamos las características visuales de tu proyecto para generar una vista positiva de
+                                    tu empresa al instante.</p>
                                 <a class="btn btn-black btn-md">leer más</a>
                             </div>
                             <!-- Grid column -->
@@ -184,7 +202,8 @@
                             <!-- Grid column -->
                             <div class="col-10">
                                 <h5 class="font-weight-bold mb-3">Diseño y Desarrollo web.</h5>
-                                <p class="grey-text">Si buscas un diseño web de calidad que combine cientos de elementos visuales e imagen corporativa con funciones complejas, en KCM podemos ayudarte. </p>
+                                <p class="grey-text">Si buscas un diseño web de calidad que combine cientos de elementos visuales e imagen corporativa
+                                    con funciones complejas, en KCM podemos ayudarte. </p>
                                 <a class="btn btn-pink btn-md">leer más</a>
                             </div>
 
@@ -265,12 +284,13 @@
             <!-- Section: Features v.4 -->
 
 
-            <section class="my-5 container">
+            <section id="contactoSection" class="my-5 container">
                 <hr class="my-5 ">
                 <!-- Section heading -->
                 <h2 class="h1-responsive font-weight-bold text-left my-5 sapo">ARE YOU READY?</h2>
                 <!-- Section description -->
-                <p class="black-text text-left w-responsive mb-5 lilita">Contáctate con nosotros y cuéntanos un poco sobre tu proyecto, te asesoramos de forma gratuita y te lo cotizamos. </p>
+                <p class="black-text text-left w-responsive mb-5 lilita">Contáctate con nosotros y cuéntanos un poco sobre tu proyecto, te asesoramos de forma gratuita y te lo cotizamos.
+                    </p>
 
                 <!-- Section: Contact v.3 -->
                 <section class="contact-section my-5 container">
@@ -287,7 +307,8 @@
                                 <div class="card-body form">
 
                                     <!-- Header -->
-                                    <h3 class="mt-4"><i class="fa fa-envelope pr-2"></i>Escríbenos:</h3>
+                                    <h3 class="mt-4">
+                                        <i class="fa fa-envelope pr-2"></i>Escríbenos:</h3>
 
                                     <!-- Grid row -->
                                     <div class="row">
@@ -368,13 +389,16 @@
                                     <h3 class="my-4 pb-2 black-text">Contacto KCM</h3>
                                     <ul class="text-lg-left list-unstyled ml-4">
                                         <li>
-                                            <p><i class="fa fa-map-marker pr-2"></i>Buenos Aires, CABA, ARG</p>
+                                            <p>
+                                                <i class="fa fa-map-marker pr-2"></i>Buenos Aires, CABA, ARG</p>
                                         </li>
                                         <li>
-                                            <p><i class="fa fa-phone pr-2"></i>11-39530609</p>
+                                            <p>
+                                                <i class="fa fa-phone pr-2"></i>11-39530609</p>
                                         </li>
                                         <li>
-                                            <p><i class="fa fa-envelope pr-2"></i>grupokcm.contacto@gmail.com</p>
+                                            <p>
+                                                <i class="fa fa-envelope pr-2"></i>grupokcm.contacto@gmail.com</p>
                                         </li>
                                     </ul>
                                     <hr class="hr-light my-4">
@@ -420,7 +444,9 @@
 
                         <!--First column-->
                         <div class="col-md-6 ">
-                            <a class="navbar-brand" href="#"><img src="img/KCM8.png" alt="#" height="90px" width="140px"></a>
+                            <a class="navbar-brand" href="#">
+                                <img src="./imgIndex/KCM8.png" alt="#" height="90px" width="140px">
+                            </a>
                             WE ARE COMMUNICATING
                         </div>
                         <!--/.First column-->
@@ -432,19 +458,23 @@
                                 <br>
                                 <li>
                                     <a class="nav-link white-text font-weight-bold" href="https://www.facebook.com/kcmgrupo/">
-                                        <i class="fa fa-facebook fa-2x light-green-text-3 icono river"></i></a>
+                                        <i class="fa fa-facebook fa-2x light-green-text-3 icono river"></i>
+                                    </a>
                                 </li>
                                 <li>
                                     <a class="nav-link white-text font-weight-bold" href="https://www.instagram.com/grupokcm/">
-                                        <i class="fa fa-instagram fa-2x light-green-text-3 icono rosario"></i></a>
+                                        <i class="fa fa-instagram fa-2x light-green-text-3 icono rosario"></i>
+                                    </a>
                                 </li>
                                 <li>
                                     <a class="nav-link white-text font-weight-bold" href="https://www.linkedin.com/company/grupo-kcm/">
-                                        <i class="fa fa-linkedin fa-2x light-green-text-3 icono boca"></i></a>
+                                        <i class="fa fa-linkedin fa-2x light-green-text-3 icono boca"></i>
+                                    </a>
                                 </li>
                                 <li>
                                     <a class="nav-link white-text font-weight-bold" href="https://www.instagram.com/grupokcm/">
-                                        <i class="fa fa-envelope fa-2x light-green-text-3 icono independiente"></i></a>
+                                        <i class="fa fa-envelope fa-2x light-green-text-3 icono independiente"></i>
+                                    </a>
 
                                 </li>
                             </ul>
@@ -466,13 +496,14 @@
 
             <!-- SCRIPTS -->
             <!-- JQuery -->
-            <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+            <script type="text/javascript" src="./MDB Free/js/jquery-3.2.1.min.js"></script>
             <!-- Bootstrap tooltips -->
-            <script type="text/javascript" src="js/popper.min.js"></script>
+            <script type="text/javascript" src="./MDB Free/js/popper.min.js"></script>
             <!-- Bootstrap core JavaScript -->
-            <script type="text/javascript" src="js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="./MDB Free/js/bootstrap.min.js"></script>
             <!-- MDB core JavaScript -->
-            <script type="text/javascript" src="js/mdb.min.js"></script>
+            <script type="text/javascript" src="./MDB Free/js/mdb.min.js"></script>
+            <script src="./MDB Free/js/indexJS.js"></script>
 </body>
 
 </html>

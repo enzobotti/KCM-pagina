@@ -61,13 +61,14 @@ h5 {
 .hijo1 {
     width: 100%;
     font-family: 'Oswald', sans-serif;
-    font-size: 4.2vw;
+    font-size: calc(10px + 4vw);
     font-weight: bold;
     color: #26ccca;
-    line-height: 80px;
-    padding-left: 130px;
+    /* line-height: 80px; */
+    /* padding-left: 80px; */
     padding-top: 10px;
-    align-content: center;
+    text-align: center;
+    /* align-content: center; */
 }
 
 .creatividad {
@@ -131,25 +132,43 @@ h5 {
     font-size: 60px;
 }
 
+@media (max-width: 768px) {
+    #hrBar {
+        display: none;
+    }
+    .portada1 {
+        padding-bottom: 80px;
+    }
+}
+
 .portada1 {
     font-family: 'Dosis', sans-serif;
-    font-size: 20px;
+    font-size: calc(10px + 1vw);
     font-weight: bold;
     height: 80px;
 }
 
 .portada2 {
     font-family: 'Oswald', sans-serif;
-    font-size: 100px;
+    font-size: calc(50px + 4vw);
     font-weight: bold;
     color: #ffef3c;
     height: 30px;
 }
 
+.portada21 {
+    font-family: 'Oswald', sans-serif;
+    font-size: calc(50px + 4vw);
+    font-weight: bold;
+    color: deeppink;
+    height: 30px;
+}
+
 .portada3 {
     font-family: 'Oswald', sans-serif;
-    font-size: 100px;
+    font-size: calc(20px + 5.8vw);
     font-weight: bold;
+    text-align: center;
 }
 
 .uña {
@@ -166,7 +185,7 @@ h5 {
 }
 
 .pie {
-    padding-top: 80px;
+    padding-top: 15px;
     font-family: 'Oswald', sans-serif;
     color: #fff;
     font-size: 60px;
@@ -221,4 +240,42 @@ h5 {
 
 .empezamos {
     color: #ffef3c;
+}
+
+
+/* STYLE HTML SERVICIOS */
+
+.tituloblog {
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+}
+.rod {
+    color: #26ccca;
+}
+.introblog {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.tituloblog2 {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #a9b500;
+}
+@media (max-width: 990px){
+    .flexCont {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .flexItem2 {
+        margin-top: 15px;
+    }
+}
+.imgShadow {
+    box-shadow: 10px 5px 30px rgba(0, 0, 0, 0.445);
+}
+
+.imgShadow2 {
+    box-shadow: -10px 5px 30px rgba(0, 0, 0, 0.445);
 }
