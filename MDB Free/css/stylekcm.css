@@ -19,6 +19,15 @@ header,
     }
 }
 
+.parallax-e{
+    background-image: url(../../imgIndex/compu1-min.jpg);
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .top-nav-collapse {
     background-color: #26ccca !important;
 }
@@ -54,7 +63,7 @@ h5 {
 
 .contenedor {
     width: 100%;
-    height: 100px;
+    /* height: 100px; */
     background: #444;
 }
 
@@ -69,6 +78,7 @@ h5 {
     padding-top: 10px;
     text-align: center;
     /* align-content: center; */
+    letter-spacing: 3px;
 }
 
 .creatividad {
@@ -127,9 +137,18 @@ h5 {
 }
 
 .titulo2 {
-    color: deeppink;
+    color: #ff1493;
     font-family: 'Oswald', sans-serif;
     font-size: 60px;
+}
+
+.que-hacemos{
+    background-color: #ffffff;
+    background-image: url(../../imgIndex/quehacemos.png);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
 }
 
 @media (max-width: 768px) {
@@ -158,7 +177,7 @@ h5 {
 
 .portada21 {
     font-family: 'Oswald', sans-serif;
-    font-size: calc(50px + 4vw);
+    font-size: calc(60px + 4vw);
     font-weight: bold;
     color: deeppink;
     height: 30px;
@@ -166,7 +185,7 @@ h5 {
 
 .portada3 {
     font-family: 'Oswald', sans-serif;
-    font-size: calc(20px + 5.8vw);
+    font-size: calc(40px + 5.8vw);
     font-weight: bold;
     text-align: center;
 }
@@ -177,7 +196,21 @@ h5 {
 }
 
 .dedo {
-    background: #ffef3c;
+    background-color: #ffef3c;
+    background-image: url(../../imgIndex/nosotros.png);
+    background-repeat: no-repeat;
+    background-size: 67%;
+    background-position-y: center;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .dedo {
+        background-size: 140%;
+        background-position-y: 0%;
+        padding-left: 30px;
+    }
+    
 }
 
 .cuticula {
@@ -205,6 +238,14 @@ h5 {
     font-weight: bold;
 }
 
+.are-you-ready{
+    background-color: #ffffff;
+    background-image: url(../../imgIndex/areyouready.png);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 .community {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -212,21 +253,25 @@ h5 {
 }
 
 .pablo {
-    width: 100%;
+    width: 95%;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    margin-left: 20px;
 }
 
 .lilita {
     width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    text-align: center;
+    padding-top: 10vw;
 }
 
 .menem {
     width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    padding-top: 10vw;
 }
 
 .pregunta {
@@ -247,7 +292,40 @@ h5 {
 }
 
 
+
+
 /* STYLE HTML SERVICIOS */
+
+.parallax-e-services{
+    background-image: url(../../imgServicios/ourplans3-min.jpg);
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.diseño-grafico{
+    background-color: #ffffff;
+    background-image: url(../../imgIndex/diseño-grafico2.png);
+    background-repeat: no-repeat;
+    background-size: calc(100px + 1vw);
+    background-position-x: left;
+    background-position-y: 80%;
+}
+
+@media (max-width: 1200px) {
+    .diseño-grafico {
+        background-color: #ffffff;
+        background-image: url(../../imgIndex/diseño-grafico.png);
+        background-position: top;
+        background-size: 115%;
+        background-repeat: no-repeat;
+        margin-top: 0;
+        padding-top: 8vw;
+    }
+    
+}
 
 .tituloblog {
     width: 100%;
