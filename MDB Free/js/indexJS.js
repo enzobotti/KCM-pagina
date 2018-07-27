@@ -67,11 +67,27 @@ $(document).ready(function() {
 	function scrollingommunity() {
 		$('html, body').animate(
 			{
-				scrollTop: $('#communitySection').offset().top - 80
+				scrollTop: $('#communitySection').offset().top - 130
 			},
 			1000
 		);
 	}
+
+	//Scroll Function REDES (servicios)
+	var redesButtonNode = $('#redesButton')
+
+	redesButtonNode.click(scrollingRedes);
+
+	function scrollingRedes() {
+		$('html, body').animate(
+			{
+				scrollTop: $('#communitySection').offset().top - 130
+			},
+			1000
+		);
+	}
+
+
 
 	//Scroll Function VIDEO Y FOTOGRAFIA
 	var videoButtonNode = $('#videoButton');

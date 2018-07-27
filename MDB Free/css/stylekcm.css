@@ -185,7 +185,7 @@ h5 {
 
 .portada3 {
     font-family: 'Oswald', sans-serif;
-    font-size: calc(40px + 5.8vw);
+    font-size: calc(20px + 5.8vw);
     font-weight: bold;
     text-align: center;
 }
@@ -304,7 +304,7 @@ h5 {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+/* 
 .diseño-grafico{
     background-color: #ffffff;
     background-image: url(../../imgIndex/diseño-grafico2.png);
@@ -314,23 +314,62 @@ h5 {
     background-position-y: 80%;
 }
 
+@media (min-width: 1200px){
+    .diseño-grafico-chico {
+        display: none;
+    }
+}
+
 @media (max-width: 1200px) {
     .diseño-grafico {
         background-color: #ffffff;
-        background-image: url(../../imgIndex/diseño-grafico.png);
+        background-image: none;
         background-position: top;
         background-size: 115%;
         background-repeat: no-repeat;
         margin-top: 0;
-        padding-top: 8vw;
+        padding-top: 4vw;
     }
     
 }
+
+.desarrollo-web {
+    background-color: #ffffff;
+    background-image: url(../../imgServicios/Desarrollo-web.png);
+    background-repeat: no-repeat;
+    background-size: calc(100px + 1vw);
+    background-position-x: right;
+    background-position-y: 80%;
+    padding-right: 2vw;
+    margin-right: 2vw;
+}
+
+@media (min-width: 1200px){
+    .desarrollo-web-chico {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .desarrollo-web {
+        background-color: #ffffff;
+        background-image: none;
+        background-position: top;
+        background-size: 115%;
+        background-repeat: no-repeat;
+        margin-top: 0;
+        /* padding-top: 4vw; */
+    /* }
+    
+} */
+
+
 
 .tituloblog {
     width: 100%;
     font-family: 'Oswald', sans-serif;
     font-size: 50px;
+    padding-top: 15px;
 }
 .rod {
     color: #26ccca;
@@ -361,3 +400,72 @@ h5 {
 .imgShadow2 {
     box-shadow: -10px 5px 30px rgba(0, 0, 0, 0.445);
 }
+
+/* CHECKBOXES */
+
+.checkstyle {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkstyle input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkstyle:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkstyle input:checked ~ .checkmark {
+    background-color: deeppink;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkstyle input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkstyle .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* END CHECKBOXES */
