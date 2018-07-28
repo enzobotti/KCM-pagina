@@ -440,7 +440,7 @@ h5 {
 
 /* When the checkbox is checked, add a blue background */
 .checkstyle input:checked ~ .checkmark {
-    background-color: deeppink;
+    background-color: #5cb861fd;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
