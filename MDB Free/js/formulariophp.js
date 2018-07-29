@@ -7,32 +7,78 @@ var companyInputNode = $('#empresa')
 var commentsInputNode = $('#mensaje')
 var submitButtonNode = $('#enviar')
 
+var nameLabelNode = $('name-label')
 
 nameInputNode.one('blur', validateEmtpyField)
-emailInputNode.one('blur', validateEmtpyField)
+emailInputNode.one('blur', validateEmailField)
 commentsInputNode.one('blur', validateEmtpyField)
 
 
 
-function validateEmtpyField (event) {
-    var inputNode = $(this)
-    var parentNode = inputNode.parent()
-  
-    if (!inputNode.val()) { 
-        $(function () {
-            $('[data-toggle="popover"]').popover()
-          })
-    
-        //   parentNode.addClass('is-invalid')
-    //   parentNode.removeClass('is-valid')
 
+function validateEmtpyField (event) {
+  var inputNode = $(this)
+
+  var errorText = ''
+  inputNode.next().remove()
+
+  if (!inputNode.val()) {
+    errorText = 'Campo '+ inputNode[0].name + ' requerido'
+  }
+
+  if (errorText) {
+    inputNode.addClass('is-invalid')
+    inputNode.removeClass('is-valid')
+
+    var parentNode = inputNode.parent()
+
+    parentNode.append('<div class="invalid-feedback">' + errorText + '</div>')
+  } else {
+    inputNode.addClass('is-valid')
+    inputNode.removeClass('is-invalid')
+  }
+
+  if (event.type === 'blur') {
+    inputNode.on('input', validateEmtpyField)
+  }
+
+  validateButton()
+}
+
+  function validateEmailField (event) {
+    var inputNode = $(this)
+
+    var errorText = ''
+
+    inputNode.next().remove()
+
+    var value = inputNode.val()
+
+    if (!value) {
+      errorText = errorText + 'Campo e-mail requerido '
     } else {
-        // parentNode.addClass('is-valid')
-        // parentNode.removeClass('is-invalid')
-      }   
+      if (value.indexOf('@') === -1) {
+        errorText = errorText + 'Debe contener arroba (@) '
+      }
+      if (value.indexOf('.') === -1) {
+        errorText = errorText + 'Debe contener punto (.) '
+      }
+    }
+
+    if (errorText) {
+      inputNode.addClass('is-invalid')
+      inputNode.removeClass('is-valid')
+
+      var parentNode = inputNode.parent()
+
+      parentNode.append('<div class="invalid-feedback">' + errorText + '</div>')
+    } else {
+      inputNode.addClass('is-valid')
+      inputNode.removeClass('is-invalid')
+    }
 
     if (event.type === 'blur') {
-      inputNode.on('input', validateEmtpyField)
+      inputNode.on('input', validateEmailField)
     }
 
     validateButton()

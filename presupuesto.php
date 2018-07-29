@@ -1,14 +1,23 @@
 <?php
-$to = "info@grupokcm.com"; // This is your Email address
+$to = "nicoargiz@hotmail.com"; // This is your Email address
 $from = $_POST['email']; // This is the sender's Email address
 $first_name = $_POST['nombre']; // This is the sender's Name
-$company = $_POST['empresa'];
 $phone = $_POST['telefono'];
 $comments = $_POST['mensaje'];
-$subject = "Email de KCM form";
+$subject = "Email de KCM - presupuesto";
+
+$diseño = @$_REQUEST['diseño']    ? "YES" : "-";
+$desarrollo = @$_REQUEST['desarrollo']   ? "YES" : "-";
+$community = @$_REQUEST['community'] ? "YES" : "-";
+$fotografia = @$_REQUEST['fotografia']  ? "YES" : "-";
+
+
 $comments = "Nombre: $first_name \n
-            Empresa: $company \n
             Telefono: $phone \n
+            Diseño grafico: $diseño \n
+            Desarrollo Web: $desarrollo \n
+            Community Mgnt: $community \n
+            Fotog. y video: $fotografia \n
             Mensaje: $comments ";
 $headers = "From:" . $from;
 $email = mail($to,$subject,$comments,$headers);
@@ -18,3 +27,4 @@ if(!$email){
 header('Location: thank-you.html');
 exit();
 ?>
+
