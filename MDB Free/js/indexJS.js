@@ -9,7 +9,7 @@ $(document).ready(function() {
 	function scrolling() {
 		$('html, body').animate(
 			{
-				scrollTop: $('#conocenosSection').offset().top - 100
+				scrollTop: $('#conocenosSection').offset().top - 60
 			},
 			1000
 		);
@@ -23,7 +23,7 @@ $(document).ready(function() {
 	function scrollingContacto() {
 		$('html, body').animate(
 			{
-				scrollTop: $('#contactoSection').offset().top - 80
+				scrollTop: $('#contactoSection').offset().top - 60
 			},
 			1000
 		);
@@ -39,7 +39,7 @@ $(document).ready(function() {
 	function scrollingDiseño() {
 		$('html, body').animate(
 			{
-				scrollTop: $('#diseñoSection').offset().top - 120 
+				scrollTop: $('#diseñoSection').offset().top - 100 
 			},
 			1000
 		);
@@ -53,7 +53,7 @@ $(document).ready(function() {
 	function scrollingDesarrollo() {
 		$('html, body').animate(
 			{
-				scrollTop: $('#desarrolloSection').offset().top - 95
+				scrollTop: $('#desarrolloSection').offset().top - 80
 			},
 			1000
 		);
@@ -67,7 +67,7 @@ $(document).ready(function() {
 	function scrollingommunity() {
 		$('html, body').animate(
 			{
-				scrollTop: $('#communitySection').offset().top - 130
+				scrollTop: $('#communitySection').offset().top - 80
 			},
 			1000
 		);
@@ -81,7 +81,7 @@ $(document).ready(function() {
 	function scrollingRedes() {
 		$('html, body').animate(
 			{
-				scrollTop: $('#communitySection').offset().top - 130
+				scrollTop: $('#communitySection').offset().top - 80
 			},
 			1000
 		);
@@ -97,7 +97,7 @@ $(document).ready(function() {
 	function scrollingVideo() {
 		$('html, body').animate(
 			{
-				scrollTop: $('#videoSection').offset().top - 80
+				scrollTop: $('#videoSection').offset().top - 20
 			},
 			1000
 		);

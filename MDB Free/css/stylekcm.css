@@ -410,10 +410,8 @@ h5 {
 
 /* END CHECKBOXES */
 
-.is-invalid {
-    border-color: #dc3545;
-    background-color: #dc3545;
-}
-.is-valid{
-    border-color: green
+.input-place{
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
