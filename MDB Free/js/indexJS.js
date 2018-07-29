@@ -53,7 +53,7 @@ $(document).ready(function() {
 	function scrollingDesarrollo() {
 		$('html, body').animate(
 			{
-				scrollTop: $('#desarrolloSection').offset().top - 130
+				scrollTop: $('#desarrolloSection').offset().top - 95
 			},
 			1000
 		);
