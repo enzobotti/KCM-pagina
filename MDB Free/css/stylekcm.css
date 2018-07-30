@@ -21,11 +21,21 @@ header,
 
 .parallax-e{
     background-image: url(../../imgIndex/compu1-min.jpg);
-    height: 100%; 
-    background-attachment: fixed;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
+}
+
+@media (min-width: 740px) {
+    .parallax-e{
+        background-image: url(../../imgIndex/compu1-min.jpg);
+        height: 100%; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 .top-nav-collapse {
@@ -118,6 +128,7 @@ h5 {
 
 .redes {
     display: flex;
+    justify-content: center;
 }
 
 .packer {
@@ -298,11 +309,21 @@ h5 {
 
 .parallax-e-services{
     background-image: url(../../imgServicios/ourplans3-min.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+@media (min-width: 740px) {
+    .parallax-e-services{
+    background-image: url(../../imgServicios/ourplans3-min.jpg);
     height: 100%; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    }
 }
 
 .tituloblog {

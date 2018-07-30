@@ -39,7 +39,7 @@ $(document).ready(function() {
 	function scrollingDiseño() {
 		$('html, body').animate(
 			{
-				scrollTop: $('#diseñoSection').offset().top - 100 
+				scrollTop: $('#diseñoSection').offset().top - 80 
 			},
 			1000
 		);
@@ -53,7 +53,7 @@ $(document).ready(function() {
 	function scrollingDesarrollo() {
 		$('html, body').animate(
 			{
-				scrollTop: $('#desarrolloSection').offset().top - 80
+				scrollTop: $('#desarrolloSection').offset().top - 20
 			},
 			1000
 		);
@@ -67,7 +67,7 @@ $(document).ready(function() {
 	function scrollingommunity() {
 		$('html, body').animate(
 			{
-				scrollTop: $('#communitySection').offset().top - 80
+				scrollTop: $('#communitySection').offset().top - 40
 			},
 			1000
 		);
@@ -81,7 +81,7 @@ $(document).ready(function() {
 	function scrollingRedes() {
 		$('html, body').animate(
 			{
-				scrollTop: $('#communitySection').offset().top - 80
+				scrollTop: $('#communitySection').offset().top - 40
 			},
 			1000
 		);
