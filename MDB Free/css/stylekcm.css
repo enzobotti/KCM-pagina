@@ -6,7 +6,7 @@
 html,
 body,
 header,
-.view {
+.view { 
     height: 100%;
 }
 
@@ -27,7 +27,7 @@ header,
     background-size: cover; 
 }
 
-@media (min-width: 740px) {
+@media (min-width: 1200px) {
     .parallax-e{
         background-image: url(../../imgIndex/compu1-min.jpg);
         height: 100%; 
@@ -312,10 +312,10 @@ h5 {
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;  
 }
 
-@media (min-width: 740px) {
+@media (min-width: 1200px) {
     .parallax-e-services{
     background-image: url(../../imgServicios/ourplans3-min.jpg);
     height: 100%; 
@@ -346,7 +346,7 @@ h5 {
     color: #a9b500;
 }
 @media (max-width: 990px){
-    .flexCont {
+    .flex-cont {
         flex-direction: column-reverse;
         justify-content: center;
     }

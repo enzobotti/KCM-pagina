@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /presupuesto.php
+Disallow: /proceso.php
+Sitemap: https://www.grupokcm.com/sitemap.xml
