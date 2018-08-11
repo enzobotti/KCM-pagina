@@ -1,0 +1,20 @@
+NEOLO
+www.grupokcm.com
+hijotero4766
+
+cPanel
+grupokcm
+hijoteroKCM4766
+
+SFTP
+grupokcm
+hijoteroKCM4766
+
+-----------------------------
+
+MAILS KCM
+info@grupokcm.com
+pass: infoKCM4766
+
+
+
